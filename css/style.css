@@ -1,0 +1,168 @@
+/******************************************
+/* CSS
+/*******************************************/
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+  
+  .clear {
+    clear: both;
+  }
+  
+  /******************************************
+  /* BASE STYLES
+  /*******************************************/
+  /*.display: none;*/
+   
+  /* media queries and font sizing (responsiveness)*/
+  
+  html {
+    font-size: 62.5%;
+    }
+    
+    body {
+    font-size: 14px;
+    font-size: 1.4rem;
+    }
+    
+    h1 {
+    font-size: 24px;
+    font-size: 2.4rem;
+    }
+  
+    h2 {
+      font-size: 16px;
+      font-size: 1.8rem;;
+    }
+  
+    p {
+      font-size: 14px;
+      font-size: 1.8rem;
+    }
+  
+  .hidden {
+   display: none;
+  }
+  
+  html {
+    background: url(../css/imgs/ae.gif) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  body {
+    color: white;
+  }
+  
+  h1, h2, p{
+    text-align: center;
+    color: rgb(247, 245, 245);
+  }
+  
+  .centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    border: solid 2px rgb(192, 255, 253);
+    transition-duration: 0.4s;
+  }
+  
+  button:hover {
+    background-color: #c083b7; /* Green */
+    color: white;
+  }
+  .container {
+    width: 55%;
+    padding: 10px;
+    margin: 2% auto 1% auto;
+    border-radius: 15px;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background-color: rgba(165, 115, 147, 0.503);
+    backdrop-filter: blur(10px);
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  /* stretch pop ups */
+  
+  /* display images */
+  img {
+    display: block;
+    margin: 0 auto;
+    height: 50vh;
+    width: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -moz-box-shadow: 10px 10px 16px #000000;
+    -webkit-box-shadow: 10px 10px 16px #000000;
+    box-shadow: 10px 10px 16px #000000;
+  }
+  
+  #videowrap{
+    position: relative;
+    display: block;
+    width: 78%; /* width of iframe wrapper */
+    height: 0;
+    margin: auto;
+    padding: 0% 0% 56.25%; /* 16:9 ratio */
+  
+  }
+  .video {
+    position: absolute;
+    top: 0; bottom: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  
+  .noDisplay{
+    display: none !important;
+  }
+  
+  
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+  
+  
+  /* smartphones, iPhone, portrait 480x320 phones */
+  @media only screen and (min-device-width: 300px) and (max-width: 480px) {
+    html {
+      background-image: url(../css/imgs/ae.gif)!important;
+    }
+   img {
+       max-width: 85%;
+       height: auto;
+    }
+    .container{
+      width: 90%;
+      margin: 30 auto;
+      padding: 10px;
+    }
+  
+  }
+  
+  
